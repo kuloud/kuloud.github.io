@@ -54,4 +54,5 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-google_analytics: GTM-MX88BK4
+# Google Analytics
+google_analytics: G-5403FHEXGN
