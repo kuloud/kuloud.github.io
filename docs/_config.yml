@@ -56,3 +56,8 @@ plugins:
 
 # Google Analytics
 google_analytics: G-5403FHEXGN
+
+algolia:
+  application_id: GBF37CQYHS
+  index_name:     jekyll # You can replace that with whatever name you want
+  search_only_api_key: c23f0f8c5e0ddb03f99b21a6adb05b38
