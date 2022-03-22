@@ -34,16 +34,11 @@ github_username:  kuloud
 show_excerpts: true
 
 # Build settings
-remote_theme: jekyll/minima
+theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
   - jekyll-seo-tag
 
-minima:
-  social_links:
-    twitter: xkuloud
-    github:  kuloud
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
