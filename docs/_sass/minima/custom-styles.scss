@@ -1,0 +1,27 @@
+.site-footer {
+    padding-bottom: 120px
+  }
+  .sub-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(247, 236, 226, 0.8);
+  }
+  #skin-switch-container {
+    display: none;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: $spacing-unit / 2;
+    text-align: center;
+    font-size: 0.9375rem;
+    color: darken($brand-color, 5%);
+    select {
+      margin: 0 2px;
+      padding: 5px 2px;
+      border-color: $border-color-02;
+      border-radius: 0;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
