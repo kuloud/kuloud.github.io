@@ -17,6 +17,8 @@ jobs:
           
       - uses: actions/cache@v2.1.6
         with:
+          script: |
+            cd ./docs/
           path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
