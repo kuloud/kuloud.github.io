@@ -95,10 +95,9 @@ DEPENDENCIES
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.2.2)
   jekyll-algolia (~> 1.7.1)
-  jekyll-feed (~> 0.12)
-  jekyll-seo-tag
-  minima (~> 2.5)
-  nokogiri (~> 1.13.3)
+  jekyll-feed (~> 0.16.0)
+  jekyll-seo-tag (~> 2.8.0)
+  minima (~> 2.5.1)
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
