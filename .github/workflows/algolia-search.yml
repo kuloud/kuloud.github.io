@@ -9,11 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
-      - name: enter subdir
-        shell: bash
-        run: |
-          cd ./docs/
       
       - uses: ruby/setup-ruby@v1
         with:
@@ -22,6 +17,7 @@ jobs:
           
       - name: Install dependencies and push records
         run: |
+          cd ./docs/
           gem install bundler
           bundle install --jobs 4 --retry 3
           bundle exec jekyll algolia
