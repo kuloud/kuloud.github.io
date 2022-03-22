@@ -14,9 +14,6 @@ jobs:
         with:
           ruby-version: '2.6'
           bundler-cache: true
-      
-      - name: Generate changelog
-        uses: heinrichreimer/action-github-changelog-generator@v2.3
           
       - name: Install dependencies and push records
         run: |

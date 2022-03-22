@@ -70,8 +70,6 @@ GEM
       jekyll-seo-tag (~> 2.1)
     nokogiri (1.13.3-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.13.3-x86_64-darwin)
-      racc (~> 1.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     progressbar (1.11.0)
@@ -96,8 +94,9 @@ PLATFORMS
 DEPENDENCIES
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.2.2)
-  jekyll-algolia (~> 1.0)
+  jekyll-algolia (~> 1.7.1)
   jekyll-feed (~> 0.12)
+  jekyll-seo-tag
   minima (~> 2.5)
   tzinfo (~> 1.2)
   tzinfo-data
