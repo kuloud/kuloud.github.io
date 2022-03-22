@@ -34,9 +34,10 @@ github_username:  kuloud
 show_excerpts: true
 
 # Build settings
-theme: minima
+remote_theme: jekyll/minima
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
   - jekyll-seo-tag
 
 minima:
