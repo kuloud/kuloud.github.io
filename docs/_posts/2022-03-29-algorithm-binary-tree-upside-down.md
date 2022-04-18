@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "【算法题】156. 上下翻转二叉树"
+title:  "[算法题] 156. 上下翻转二叉树"
 date:   2022-03-29 22:41:00 +0800
 categories: project
 

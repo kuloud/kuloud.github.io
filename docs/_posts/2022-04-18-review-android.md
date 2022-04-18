@@ -1,19 +1,18 @@
 ---
 layout: post
 title:  "[Android] 知识点复习"
-date:   2022-04-18 16:31:00 +0800
+date:   2022-04-18 08:31:00 +0800
 categories: android
 
 ---
 
 # 知识点
-1. [Android 架构][1]
+1. [Android 架构][1] :heavy_check_mark:
 1. Android 内核
 1. Android 系统框架层
 1. Android 应用层
     1. APP
         1. APP 启动流程
-
 1. 进程
     1. 进程创建
     1. 进程类型
@@ -55,19 +54,26 @@ categories: android
 # 项目
 1. 出租车信息化
     1. 开放平台 SDK
-        1. 视频流
+        
+        难点：
+
+        方案：
+
     1. 车机APP
-        1. 蓝牙打票机
+    
+        难点：
+        
+        方案：
     
 1. AoE
     1. AoE 原理
     1. 图像格式
     1. 性能优化
-        1. 跨进程通信
 1. 代驾司机端
     1. 页面路由
     1. 应用保活
     1. MVVM
+    1. 里程不准问题
 1. 仿真系统
     1. 状态机
 
