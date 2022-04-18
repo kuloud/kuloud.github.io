@@ -8,11 +8,7 @@ categories: android
 
 # 知识点
 1. [Android 架构][1] :heavy_check_mark:
-1. Android 内核
-1. Android 系统框架层
-1. Android 应用层
-    1. APP
-        1. APP 启动流程
+1. APP 启动流程
 1. 进程
     1. 进程创建
     1. 进程类型
