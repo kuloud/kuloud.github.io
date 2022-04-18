@@ -59,11 +59,19 @@ categories: algorithm
 1. 回溯算法
 
 1. 索引滑窗
+    1. [162. 寻找峰值](https://leetcode-cn.com/problems/find-peak-element/solution/162-xun-zhao-feng-zhi-by-kuloud-v-n8m0/)
+
 
 1. 求和问题
 
 1. NP问题
     1. [416. 分割等和子集](https://leetcode-cn.com/problems/partition-equal-subset-sum/solution/by-kuloud-v-ew0i/)
+
+1. 双指针
+    1. [82. 删除排序链表中的重复元素 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/solution/82-shan-chu-pai-xu-lian-biao-zhong-de-zh-mwt0/)
+    1. [986. 区间列表的交集](https://leetcode-cn.com/problems/interval-list-intersections/solution/986-qu-jian-lie-biao-de-jiao-ji-by-kulou-eyht/)
+    1. [11. 盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/solution/11-sheng-zui-duo-shui-de-rong-qi-by-kulo-5t2f/)
+    1. [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/solution/21-he-bing-liang-ge-you-xu-lian-biao-by-dcrun/)
 
 
 
@@ -75,7 +83,8 @@ categories: algorithm
 
 再就是 `混序数组` 重排也是一种常见题型，这类题型，一般都需要直接先排序，然后观察传递的规律，自下而上倒推；
 
-`链表` 的查找问题，一般是配合数组、HashMap，维护一个 `类索引` 的映射关系，涉及反转问题时，需要多注意next指针的判空和传递方向指针处理，个人认为 `链表`和`树`是比较容易考到的，其他题型比较好背，或者临场梳理逻辑还能尝试一下，指针的处理逻辑不清晰，这块基本会卡，这块要重点关注，面试前再 review 一下；
+`链表` 的查找问题，一般是配合数组、HashMap，维护一个 `类索引` 的映射关系，涉及反转问题时，需要多注意next指针的判空和传递方向指针处理，个人认为 `链表`和`树`是比较容易考到的，其他题型比较好背，或者临场梳理逻辑还能尝试一下，双指针的处理逻辑不清晰，这块基本会卡，这块要重点关注，面试前再 review 一下；
+
 
 
 
