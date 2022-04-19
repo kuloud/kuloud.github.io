@@ -20,9 +20,11 @@ categories: algorithm
         1. [74. 搜索二维矩阵](https://leetcode-cn.com/problems/search-a-2d-matrix/solution/by-kuloud-v-ekjg/)
         1. [33. 搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/solution/33-sou-suo-xuan-zhuan-pai-xu-shu-zu-by-k-gimm/)
         1. [18. 四数之和](https://leetcode-cn.com/problems/4sum/solution/18-si-shu-zhi-he-by-kuloud-v-exv5/)
+        1. [456. 132 模式](https://leetcode-cn.com/problems/132-pattern/solution/456-132-mo-shi-by-kuloud-v-g4uq/)
     1. 树
         1. [116. 填充每个节点的下一个右侧节点指针](https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node/solution/116-tian-chong-mei-ge-jie-dian-de-xia-yi-7fyx/)
         1. [617. 合并二叉树](https://leetcode-cn.com/problems/merge-two-binary-trees/solution/617-he-bing-er-cha-shu-by-kuloud-v-7rka/)
+        
     1. 哈希表
     1. 栈
     1. 队列
@@ -45,6 +47,7 @@ categories: algorithm
     1. 矩阵问题
 
 1. K值问题
+    1. [230. 二叉搜索树中第K小的元素](https://leetcode-cn.com/problems/kth-smallest-element-in-a-bst/solution/by-kuloud-v-5g90/)
 
 1. 动态规划
     1. [198. 打家劫舍](https://leetcode-cn.com/problems/house-robber/solution/198-da-jia-jie-she-by-kuloud-v-5ouk/)
@@ -72,6 +75,7 @@ categories: algorithm
     1. [986. 区间列表的交集](https://leetcode-cn.com/problems/interval-list-intersections/solution/986-qu-jian-lie-biao-de-jiao-ji-by-kulou-eyht/)
     1. [11. 盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/solution/11-sheng-zui-duo-shui-de-rong-qi-by-kulo-5t2f/)
     1. [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/solution/21-he-bing-liang-ge-you-xu-lian-biao-by-dcrun/)
+    1. [1471. 数组中的 k 个最强值](https://leetcode-cn.com/problems/the-k-strongest-values-in-an-array/solution/1471-shu-zu-zhong-de-k-ge-zui-qiang-zhi-mh349/)
 
 
 
