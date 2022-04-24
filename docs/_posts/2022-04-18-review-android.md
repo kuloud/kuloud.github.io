@@ -15,6 +15,8 @@ categories: android
     1. 进程回收机制
 1. 线程
     1. AsyncTask
+    1. [锁原理][2] :heavy_check_mark:
+        1. [自旋锁][3]
 1. 内存
     1. 内存回收机制
 1. IPC
@@ -36,6 +38,8 @@ categories: android
     1. 架构组件
         1. Navigation
         1. ViewModel
+            1. ViewModel的实现原理
+        1. Glide 怎么加载和缓存图片
 1. 其他
     1. 应用保活
     1. APK 编译
@@ -77,3 +81,5 @@ categories: android
 
 ---
 [1]: https://blog.csdn.net/yiranfeng/article/details/103549149
+[2]: https://segmentfault.com/a/1190000023315634
+[3]: https://www.cnblogs.com/cxuanBlog/p/11679883.html
