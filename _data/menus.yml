@@ -1,0 +1,24 @@
+main:
+  # - name: "服务"
+  #   url: "/services/"
+  #   weight: 2
+  - name: "作品集"
+    url: "/showcases/"
+    weight: 2
+  # - name: "团队"
+  #   url: "/team/"
+  #   weight: 3
+  - name: "关于"
+    url: "/about/"
+    weight: 4
+  - name: "联系方式"
+    url: "/contact/"
+    weight: 5
+
+footer:
+  - name: "首页"
+    url: "/"
+    weight: 1
+  - name: "联系方式"
+    url: "/contact/"
+    weight: 2

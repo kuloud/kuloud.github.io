@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Github",
+    "link": "https://github.com/kuloud/kuloud.github.io",
+    "image": "images/social/github.svg"
+  },
+  {
+    "name": "Twitter",
+    "link": "https://twitter.com/xkuloud",
+    "image": "images/social/twitter.svg"
+  }
+]
