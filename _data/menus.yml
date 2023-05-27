@@ -1,4 +1,7 @@
 main:
+  - name: "Blog"
+    url: "/blogs/"
+    weight: 2
   # - name: "服务"
   #   url: "/services/"
   #   weight: 2

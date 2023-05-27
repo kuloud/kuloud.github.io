@@ -15,6 +15,8 @@ home:
   limit_showcases: 6
 
 collections:
+  blogs:
+    output: true
   showcases:
     output: true
     sort_by: weight
@@ -25,6 +27,11 @@ collections:
     output: true
 
 defaults:
+  - scope:
+      path: ""
+      type: "blogs"
+    values:
+      layout: "blog"
   - scope:
       path: ""
       type: "showcases"

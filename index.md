@@ -8,6 +8,6 @@ intro_image_hide_on_mobile: true
 show_call_box: true
 ---
 
-# 个人首页
+# Kuloud 的 Blog
 
 Kuloud 的个人 Blog
