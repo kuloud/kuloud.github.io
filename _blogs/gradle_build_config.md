@@ -2,6 +2,7 @@
 title: "BuildConfig"
 date: 2023-05-27T08:45:46+08:00
 weight: 1
+tags: Gradle
 ---
 
 新建 Android 工程，发现不会自动构建 `BuildConfig` 类，于是找了下 `gradle 8.0` 的[文档](https://developer.android.com/reference/tools/gradle-api/8.0/com/android/build/api/dsl/BuildFeatures#buildConfig())
