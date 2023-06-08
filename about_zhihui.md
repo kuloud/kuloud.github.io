@@ -1,4 +1,5 @@
 ---
+layout: single-content
 permalink: "/chat/zhihui/about"
 ---
 
