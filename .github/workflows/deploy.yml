@@ -1,0 +1,45 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version-file: pubspec.yaml
+      - run: flutter --version
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -y && sudo apt-get upgrade -y
+          sudo apt-get install -y curl git unzip xz-utils zip libglu1-mesa
+          flutter pub get
+
+      - name: Build Web
+        run: flutter build web --release
+
+      - name: Move build to docs
+        run: |
+          rm -rf docs
+          mv build/web docs
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'kuloud'
+          git config --global user.email 'xkuloud@gmail.com'
+          git add docs
+          git commit -m "Deploy to GitHub Pages" || echo "No changes to commit"
+          git push
