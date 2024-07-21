@@ -13,10 +13,10 @@ dependencies:
   flutter_adaptive_scaffold: ^0.1.11+1
   flutter_markdown: ^0.7.3
   flutter_svg: ^2.0.10+1
-  # x_common: ^1.0.4
+  x_common: ^1.0.4
   http: ^1.2.2
-  x_common:
-    path: ../flutter_dashboard/packages/x_common/
+  # x_common:
+  #   path: ../flutter_dashboard/packages/x_common/
 dev_dependencies:
   flutter_test:
     sdk: flutter
