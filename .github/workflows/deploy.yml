@@ -48,30 +48,29 @@ jobs:
           rm -rf docs
           mv build/web docs
 
-      - name: Commit and push changes
-        run: |
-          git config --global user.name 'kuloud'
-          git config --global user.email 'xkuloud@gmail.com'
-          git add docs
-          git commit -m "Deploy to GitHub Pages" || echo "No changes to commit"
-          git push
-
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+      # - name: Commit and push changes
+      #   run: |
+      #     git config --global user.name 'kuloud'
+      #     git config --global user.email 'xkuloud@gmail.com'
+      #     git add docs
+      #     git commit -m "Deploy to GitHub Pages" || echo "No changes to commit"
+      #     git push
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
           path: "./docs/"
+
+  # Single deploy job since we're just deploying
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
