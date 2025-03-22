@@ -14,8 +14,8 @@ hero:
   #     text: API Examples
   #     link: /api-examples
   image:
-      src: /public/logo.svg
-      alt: Kuloud
+      src: logo.svg
+      alt: Kuloud Logo
 features:
   - title: amap_map
     details: 基于高德开放平台地图SDK的flutter插件
