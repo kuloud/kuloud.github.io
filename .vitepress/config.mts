@@ -61,7 +61,7 @@ export default defineConfig({
     socialLinks: [{ icon: "github", link: "https://github.com/kuloud" }],
 
     footer: {
-      copyright: "Copyright © 2024-${new Date().getFullYear()} kuloud",
+      copyright: `Copyright © 2023-${new Date().getFullYear()} kuloud`,
     },
 
     search: {
