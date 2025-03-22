@@ -1,43 +1,32 @@
-# Miscellaneous
-*.class
+# 依赖目录
+node_modules/
+.pnpm-store/
+
+# 构建输出
+.cache/
+.temp/
 *.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.buildlog/
-.history
-.svn/
-migrate_working_dir/
+dist/
 
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
+# 环境文件
+.env
+.env.*
+*.env
+
+# 编辑器配置
 .idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# 系统文件
+.DS_Store
+Thumbs.db
 
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.pub-cache/
-.pub/
-/build/
-
-# Symbolication related
-app.*.symbols
-
-# Obfuscation related
-app.*.map.json
-
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# 调试文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
