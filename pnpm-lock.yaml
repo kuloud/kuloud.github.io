@@ -7,11 +7,10 @@ settings:
 importers:
 
   .:
-    dependencies:
+    devDependencies:
       terser-webpack-plugin:
         specifier: ^5.3.14
         version: 5.3.14(webpack@5.98.0)
-    devDependencies:
       vitepress:
         specifier: ^1.6.3
         version: 1.6.3(@algolia/client-search@5.21.0)(@types/node@22.13.11)(postcss@8.5.3)(search-insights@2.17.3)(terser@5.39.0)
