@@ -34,7 +34,6 @@ export function generateSidebarConfig() {
     } else if (isMarkdownFile(file) && !isIndexFile(file)) {
       const fileContent = fs.readFileSync(filePath, "utf8");
       const frontmatter = parseFrontmatter(fileContent);
-      console.log("frontmatter", frontmatter);
       const title = frontmatter.title || formatTitle(file);
       sidebar[`/${file}/`] = {
         text: title,
