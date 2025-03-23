@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "vitepress": "^1.6.3"
+    "vitepress": "^1.6.3",
+    "terser-webpack-plugin": "^5.3.14"
   },
   "scripts": {
     "docs:dev": "vitepress dev",
