@@ -1,5 +1,11 @@
 import { defineConfig } from "vitepress";
 
+import { generateSidebarConfig } from "./scripts/generate-sidebar";
+
+const currentYear = new Date().getFullYear();
+
+const sidebar = generateSidebarConfig();
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "kuloud",
@@ -34,38 +40,57 @@ export default defineConfig({
       { text: "Home", link: "/" },
       { text: "Blog", link: "/blog/2025-03-22-hello-world" },
       { text: "Presentations", link: "/presentations/2025-03-22-hello-world" },
+      {
+        text: "Docs",
+        items: [
+          { text: "amap_map", link: "/projects/amap_map" },
+          { text: "auto", link: "/projects/auto/getting-start/introduction" },
+        ],
+      },
     ],
 
     sidebar: {
-      "/blog/": [
-        {
-          text: "Blog",
-          items: [
-            { text: "Hello World", link: "/blog/2025-03-22-hello-world" },
-          ],
-        },
-      ],
-      "/presentations/": [
-        {
-          text: "Presentations",
-          items: [
-            {
-              text: "Hello World",
-              link: "/presentations/2025-03-22-hello-world",
-            },
-          ],
-        },
-      ],
+      ...sidebar,
     },
 
     socialLinks: [{ icon: "github", link: "https://github.com/kuloud" }],
 
     footer: {
-      copyright: `Copyright © 2023-${new Date().getFullYear()} kuloud`,
+      copyright: `Copyright © ${
+        currentYear > 2025 ? `2025-${currentYear}` : "2025"
+      } kuloud`,
     },
 
     search: {
       provider: "local",
+    },
+  },
+  vite: {
+    optimizeDeps: {
+      exclude: ["vitepress"],
+    },
+    build: {
+      minify: "terser",
+      chunkSizeWarningLimit: 1600,
+    },
+    json: {
+      stringify: true,
+    },
+    ssr: {
+      noExternal: ["vitepress"],
+    },
+    server: {
+      fs: {
+        strict: true,
+      },
+    },
+    define: {
+      "process.env": {},
+    },
+    resolve: {
+      alias: {
+        "@auto": "projects/auto",
+      },
     },
   },
 });
