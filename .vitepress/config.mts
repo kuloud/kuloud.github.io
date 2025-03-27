@@ -154,8 +154,8 @@ export default defineConfig({
 
     nav: [
       { text: "Home", link: "/" },
-      { text: "Blog", link: "/blog/2025-03-22-hello-world" },
-      { text: "Presentations", link: "/presentations/2025-03-22-hello-world" },
+      { text: "Blog", link: "/blog/" },
+      { text: "Presentations", link: "/presentations/" },
       {
         text: "Docs",
         items: [
