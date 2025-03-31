@@ -160,7 +160,7 @@ export default defineConfig({
         text: "Docs",
         items: [
           { text: "amap_map", link: "/projects/amap_map" },
-          { text: "auto", link: "/projects/auto/getting-start/introduction" },
+          // { text: "auto", link: "/projects/auto/getting-start/introduction" },
         ],
       },
     ],
