@@ -1,6 +1,6 @@
-# Sample workflow for building and deploying a VitePress site to GitHub Pages
+# Sample workflow for building and deploying a Next.js site to GitHub Pages
 #
-name: Deploy VitePress site to Pages
+name: Deploy Next.js site to Pages
 
 on:
   # Runs on pushes targeting the `main` branch. Change this to `master` if you're
@@ -31,25 +31,28 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Not needed if lastUpdated is not enabled
+          fetch-depth: 0
       - uses: pnpm/action-setup@v3
         with:
           version: 10
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: pnpm
+          cache-dependency-path: web-app/package.json
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
         run: pnpm install
-      - name: Build with VitePress
-        run: pnpm run docs:build
+        working-directory: web-app
+      - name: Build with Next.js
+        run: pnpm run build
+        working-directory: web-app
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .vitepress/dist
+          path: web-app/out
 
   # Deployment job
   deploy:
